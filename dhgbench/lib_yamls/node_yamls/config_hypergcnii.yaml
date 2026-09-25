@@ -1,0 +1,17 @@
+default: &default
+  MLP_hidden: 64
+  dropout: 0.2
+  lr: 1.0e-3
+  wd: 1.0e-5
+
+  HyperGCN_mediators: true
+  HyperGCN_fast: true 
+  restart_alpha: 0.1
+  lamda: 0.5
+
+cora:
+  <<: *default
+  wd: 0.0
+
+house-committees-100:
+  <<: *default

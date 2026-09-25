@@ -1,0 +1,25 @@
+default:
+  MLP_hidden: 512
+  epochs: 200
+  lr: 1.0e-3
+  wd: 0.0
+  dropout: 0.2
+
+  input_drop: 0.6
+  activation: "prelu" # activation: ['relu', 'prelu']
+  use_norm: False
+  restart_alpha: 0.1
+  lamda: 0.5
+
+cora:
+  MLP_hidden: 512
+  epochs: 200
+  lr: 1.0e-3
+  wd: 0.0
+  dropout: 0.2
+
+  input_drop: 0.6
+  activation: "prelu" # activation: ['relu', 'prelu']
+  use_norm: False
+  restart_alpha: 0.1
+  lamda: 0.5

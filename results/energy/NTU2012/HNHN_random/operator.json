@@ -1,0 +1,21 @@
+{
+  "family": "HNHN",
+  "nodes": 2012,
+  "edges": 4024,
+  "incidence_nnz": 12072,
+  "full_nodes": 2012,
+  "component_sizes": [
+    2012
+  ],
+  "node_fraction": 1.0,
+  "incidence_hash": "6eb96fca25e4dc07cb12f73b8e7cac380fdc1094c7132fd0d758a828934ffbef",
+  "lambda1": 1.0,
+  "lambda2": 0.9988497670580719,
+  "lambda_min": null,
+  "perron_residual": 1.1734115736881375e-16,
+  "perron_min": 0.02229389810338549,
+  "pi_mean": 1.0,
+  "angle_constant": 0.0,
+  "angle_sqrt_degree": 14.146956485441486,
+  "kernel_control_R_op": 4.013913554326104e-33
+}

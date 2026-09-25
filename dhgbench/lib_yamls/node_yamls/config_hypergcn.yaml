@@ -1,0 +1,17 @@
+default: &default
+  lr: 0.01
+  wd: 1.0e-5
+  MLP_hidden: 64
+
+  HyperGCN_mediators: true
+  HyperGCN_fast: true 
+
+cora:
+  <<: *default
+  lr: 0.001
+  wd: 0.0
+
+house-committees-100:
+  <<: *default
+  lr: 0.001
+  wd: 0.0

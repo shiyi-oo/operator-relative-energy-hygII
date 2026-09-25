@@ -1,0 +1,34 @@
+default: &default
+  lr: 0.001
+  wd: 0.0
+  MLP_hidden: 512
+
+  HNHN_alpha: -1.5
+  HNHN_beta: -0.5
+  # HNHN-II keeps P a fixed linear operator, so the inner ReLU is OFF (see hnhn2.py).
+  # Set HNHN_II_nonlinear_inbetween: true to restore HNHN's published inner ReLU.
+  HNHN_II_nonlinear_inbetween: false
+
+  restart_alpha: 0.1
+  lamda: 0.5
+  dropout: 0.2
+
+cora: 
+  <<: *default
+
+citeseer:
+  <<: *default
+  MLP_hidden: 256
+
+'20newsW100':
+  <<: *default
+
+NTU2012:
+  <<: *default
+
+house-committees-100:
+  <<: *default
+  MLP_hidden: 256
+
+pokec:
+  <<: *default

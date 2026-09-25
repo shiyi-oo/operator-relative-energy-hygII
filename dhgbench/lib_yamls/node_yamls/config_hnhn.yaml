@@ -1,0 +1,28 @@
+default: &default
+  lr: 0.001
+  wd: 0.0
+  MLP_hidden: 512
+
+  HNHN_alpha: -1.5
+  HNHN_beta: -0.5
+  HNHN_nonlinear_inbetween: true
+
+cora: 
+  <<: *default
+
+citeseer:
+  <<: *default
+  MLP_hidden: 256
+
+'20newsW100':
+  <<: *default
+
+NTU2012:
+  <<: *default
+
+house-committees-100:
+  <<: *default
+  MLP_hidden: 256
+
+pokec:
+  <<: *default

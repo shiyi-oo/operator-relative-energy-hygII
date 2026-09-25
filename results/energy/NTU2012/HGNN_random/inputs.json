@@ -1,0 +1,52 @@
+[
+  {
+    "seed": 0,
+    "feature_hash": "95cd077f8bc9f2227b86ee85b14a773aebe8c48ad82c93dae7c11e9e2ecb62ee",
+    "width": 64
+  },
+  {
+    "seed": 1,
+    "feature_hash": "596b6324b9796e8be185c3fbc7344769de6b12e855d437acf6de44e829e26f30",
+    "width": 64
+  },
+  {
+    "seed": 2,
+    "feature_hash": "0e67da37afebb58fd0f2fce06425f54e45fb0541159b9dd5823dceaf80d5d454",
+    "width": 64
+  },
+  {
+    "seed": 3,
+    "feature_hash": "a1ea2ef6c9c353de6e4e287eef3e3f0f475cdc39e186f44504787cd3bd92ca76",
+    "width": 64
+  },
+  {
+    "seed": 4,
+    "feature_hash": "c576e08a2faf1f362f4a2ae4d667f4192a7c85ad55629532aa0fcacdcc4428ce",
+    "width": 64
+  },
+  {
+    "seed": 5,
+    "feature_hash": "c39bbd7a420a26b69386e1f54f4d3b1b66077b305527bfb941340f6db3e9ba01",
+    "width": 64
+  },
+  {
+    "seed": 6,
+    "feature_hash": "c3f784e2f4d8c2e5e6cbcee00b045df0f9d4c3c5b51c0a0485e37fccb15ee5e5",
+    "width": 64
+  },
+  {
+    "seed": 7,
+    "feature_hash": "dd79c94a3b2168dede7ee78119876ccb9dad14da975f39bc0a4179d913d92829",
+    "width": 64
+  },
+  {
+    "seed": 8,
+    "feature_hash": "956bc7d6be23819daa6a07350d35116ad134144033e6bd70f16c35e7d9768042",
+    "width": 64
+  },
+  {
+    "seed": 9,
+    "feature_hash": "8a95b4165ae6b32f051fb0ca775881cd7ff38aa67576a19901b262d7bc9d1bd4",
+    "width": 64
+  }
+]

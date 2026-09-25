@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.pytest_cache/
+outputs/
+logs/
+data/pyg_data/
+data/trad_data/
+data/hete_data/
+dhgbench/lib_edge_splits/
+dhgbench/ehnn_cache/
+tests/
+theory/
+provenance/
+*.egg-info/
+.github/

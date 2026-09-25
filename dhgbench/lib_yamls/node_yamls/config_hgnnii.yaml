@@ -1,0 +1,41 @@
+default: &default
+  HCHA_symdegnorm: true
+  restart_alpha: 0.1
+  lamda: 0.5
+  dropout: 0.2
+
+cora: 
+  <<: *default
+  lr: 1.0e-3
+  wd: 0.0
+  MLP_hidden: 512
+
+citeseer:
+  <<: *default
+  lr: 1.0e-3
+  wd: 0.0
+  MLP_hidden: 256
+
+'20newsW100':
+  <<: *default
+  wd: 0.0
+  MLP_hidden: 64
+  lr: 0.1
+
+NTU2012:
+  <<: *default
+  lr: 1.0e-3
+  wd: 0.0
+  MLP_hidden: 256
+
+house-committees-100:
+  <<: *default
+  lr: 1.0e-3
+  wd: 0.0
+  MLP_hidden: 512
+
+pokec:
+  <<: *default
+  lr: 1.0e-3
+  wd: 0.0
+  MLP_hidden: 128

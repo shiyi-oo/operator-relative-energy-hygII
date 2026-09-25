@@ -1,0 +1,24 @@
+# The experiment tunes this new baseline; these are initialization defaults.
+default: &default
+  MLP_hidden: 128
+  dropout: 0.2
+  input_drop: 0.0
+  activation: relu
+  use_norm: false
+  restart_alpha: 0.0
+  lamda: 0.5
+  lr: 0.01
+  wd: 0.0
+cora:
+  <<: *default
+house-committees-100:
+  <<: *default
+20newsW100:
+  <<: *default
+
+citeseer:
+  <<: *default
+pokec:
+  <<: *default
+NTU2012:
+  <<: *default

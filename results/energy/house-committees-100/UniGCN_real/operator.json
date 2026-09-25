@@ -1,0 +1,21 @@
+{
+  "family": "UniGCN",
+  "nodes": 1290,
+  "edges": 1630,
+  "incidence_nnz": 13132,
+  "full_nodes": 1290,
+  "component_sizes": [
+    1290
+  ],
+  "node_fraction": 1.0,
+  "incidence_hash": "c6541404c35c9455097917f4560f2a6d6ef0c327ae255e77881cf143f6acb00b",
+  "lambda1": 0.9722050308670903,
+  "lambda2": 0.7474484728910358,
+  "lambda_min": null,
+  "perron_residual": 6.366400034374644e-16,
+  "perron_min": 0.010351927155885005,
+  "pi_mean": 1.0,
+  "angle_constant": 18.160551788149867,
+  "angle_sqrt_degree": 0.9836762176610223,
+  "kernel_control_R_op": 7.968034469023547e-32
+}
