@@ -93,29 +93,6 @@ python scripts/plot_classification.py --kind selected
 
 The extraction preserves recorded settings rather than adapting them to the current code. In the local matched-HNHN partial table, 54 HNHN/HNHNII parameter dictionaries match the reference CSV; the remaining 18 HNHN rows have no architecture confirmation in that partial table. Also, 22 UniGCN entries use `use_norm=True`, which the current implementation rejects. The existing `selected` guards for HNHN/HNHNII and UniGCN remain until those compatibility issues are reconciled; fresh `run` or `tune/evaluate` uses the current models. Extraction checks are recorded in `provenance/validation/config-extraction.json`. The default figure command reads newly generated main-study results, not the archived `all_six_datasets.csv`; it requires explicit `MatchedHNHN` architecture metadata for HNHN rows.
 
-## 4. Verification and layout
-
-```bash
-python -m unittest discover -s tests -v
-python tests/check_ii_smoke.py
-python tests/check_energy_results.py --root results/energy
-python tests/verify_release.py
-```
-
-The unit tests check dense operator formulas, spectral recurrences, model tracing, matched-HNHN outputs and gradients, main-study model dispatch, and failed-trial recovery. The II smoke script also retains numerical checks of the historical layer implementations as mathematical controls. `theory/` contains the independent theoretical examples and numerical checks. Numerical checks do not replace proofs or a full experimental rerun.
-
-| Path | Role |
-|---|---|
-| `scripts/run_energy.py` | Run controlled linear propagation |
-| `scripts/plot_energy.py` | Generate the energy figure |
-| `scripts/run_classification.py` | Run the main depth study |
-| `scripts/plot_classification.py` | Collect classification results and generate the depth figure |
-| `dhgbench/` | Models, training, data loading, and task helpers |
-| `results/` | Default destination for model measurements and classification results |
-| `outputs/figures/` | Default destination for generated figures |
-| `tests/`, `theory/` | Implementation checks and theoretical numerical examples |
-| `provenance/` | Historical run records and release integrity inventory |
-
 ## Attribution and data terms
 
 The benchmark runner adapts DHG-bench and implementations of [AllSet](https://github.com/jianhao2016/AllSet), [UniGNN](https://github.com/OneForward/UniGNN), [HyperGCN](https://github.com/malllabiisc/HyperGCN), and HNHN. The AllSet MIT notice is preserved in [licenses/AllSet-MIT.txt](licenses/AllSet-MIT.txt). Existing inline notices remain in the source; that notice does not assign a blanket license to every file in this repository.
