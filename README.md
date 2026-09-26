@@ -62,8 +62,6 @@ Every classification CSV formats `tune_val`, `test_acc`, `test_std`, and `val_ac
 
 The main grid contains six datasets × ten methods × six depths (360 cells). Models are HGNN, HNHN, HyperGCN, AllSetTransformer, UniGCN, and their II variants. Depths are 2, 4, 8, 16, 32, and 64. Each cell targets 30 completed tuning trials using three seeds, followed by ten-seed evaluation of the validation-selected configuration. The default is 200 epochs. Repeating tuning resumes the completed-trial target rather than adding another 30 trials. Source and training-setting identities are checked before resuming or evaluating a study.
 
-**HNHN and HNHNII both use `MatchedHNHN` in the main study.** They share the encoder, classifier, two affine maps per propagation layer, activations, and dropout placement. Baseline uses alpha=0 and beta=1; II uses restart and identity mixing. Both arms tune their shared hyperparameters independently. There is no separate matched-HNHN script or study to launch.
-
 ```bash
 # Inspect the grid without training or extracting data.
 python scripts/run_classification.py --dry-run
